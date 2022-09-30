@@ -13,7 +13,7 @@ const Pricing = () => {
         ] 
     },
         { id: 2, name: 'Medium', price: 9.99, features: [
-            'Awesome Feature',
+            'Everything on Free',
             'Extra Feature',
             'Unnecessary Feature',
             'Will never use Feature',
@@ -21,7 +21,7 @@ const Pricing = () => {
             'Ajaira Feature'
         ]  },
         { id: 3, name: 'Premium', price: 19.99, features: [
-            'Awesome Feature',
+            'Everything on Premium',
             'Extra Feature',
             'Unnecessary Feature',
             'Will never use Feature',
@@ -32,7 +32,7 @@ const Pricing = () => {
     return (
         <div>
             <h2 className='text-5xl font-bold bg-indigo-300 p-12 text-white'>Best Deal of the Town</h2>
-            <div className='grid grid-cols-3 gap-3'>
+            <div className='grid md:grid-cols-3 gap-3 mt-4'>
                 {
                     pricingOptions.map(option => <PriceOption
                         key={option.id}
